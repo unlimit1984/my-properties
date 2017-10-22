@@ -24,7 +24,8 @@ public class AppConfig {
     @Value("${names}")
     private String[] names;
 
-    @Value("#{'${nameList}'.split(',')}")
+    //@Value("#{'${nameList}'.split(',')}")
+    @Value("#{T(java.util.Arrays).asList('${nameList}')}")
     private List<String> nameList;
 
     @Value("#{${nameMap}}")

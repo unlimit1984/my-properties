@@ -13,7 +13,7 @@ public class MainApp {
         ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(AppConfig.class);
 
         MyBean myBean = ctx.getBean(MyBean.class);
-        myBean.getInfo();
+        myBean.printInfo();
 
 
     }

@@ -26,7 +26,7 @@ public class MyBean {
         this.nameSet = nameSet;
     }
 
-    public void getInfo() {
+    public void printInfo() {
         System.out.println("name: " + name);
         System.out.println("names: " + Arrays.deepToString(names));
         System.out.println("nameList: " + nameList);
